@@ -23,8 +23,8 @@
 %
 
 \documentclass[svgnames]{beamer}
-    \beamertemplatenavigationsymbolsempty
-    \usetheme{Singapore}
+\beamertemplatenavigationsymbolsempty
+\usetheme{Singapore}
 
     \makeatletter
 
@@ -41,15 +41,20 @@
         \vspace{1.5ex}
     }
 
-    \makeatother
+\makeatother
 
-    \usepackage{varwidth}
-    \usepackage{xcolor}
-    \usepackage{graphicx}
-    \usepackage{hyperref}
-    \usepackage{verbatim}
-    \usepackage{varwidth}
-    \usepackage{microtype}
+\usepackage{varwidth}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{varwidth}
+\usepackage{microtype}
+\usepackage{etoolbox}
+\usepackage[export,Export]{adjustbox}
+
+    \providebool{longversion}
+    \setbool{longversion}{true}
 
     \newcommand{\beamerpurple}[1]{{\usebeamercolor[fg]{title}#1}}
 \begin{document}
@@ -78,14 +83,47 @@
     collaboration, and professional development.\\[1ex]
     \begin{itemize}
         \item we run seminars, workshops, symposiums, and social events.
-        \item we are the official
-        \href{http://www.iscb.org/}{\beamerpurple{ISCB}} Regional Student Group for
-        Australia.
     \end{itemize}
     \vfill
 \end{frame}
 
-\begin{frame}{Previous Events}
+\ifbool{longversion}{
+
+\begin{frame}{ISCB}
+
+\begin{minipage}[c]{\linewidth}
+    \vfill
+
+    \beamerpurple{COMBINE} is the official
+    \href{http://www.iscb.org/}{\beamerpurple{ISCB}} Regional Student Group for
+    Australia.
+
+    \vspace{3ex}
+
+    \begin{minipage}[c]{0.45\linewidth}
+        \centering
+        \includegraphics[height=15mm,valign=M]{./images/iscb_logo.png}
+    \end{minipage}
+    \begin{minipage}[c]{0.45\linewidth}
+        \centering
+        \includegraphics[height=15mm,valign=M]{./images/ISCBSC-logo.png}
+    \end{minipage}
+
+    \vspace{3ex}
+
+    \begin{itemize}
+        \item ISCB - International Society for Computational Biology
+        \item 25 ISCB Regional Student Groups (RSGs) around the world.
+    \end{itemize}
+
+    \vfill
+\end{minipage}
+
+\end{frame}
+
+}{}
+
+\begin{frame}{Previous COMBINE Events}
     \includegraphics[width=\linewidth]{./images/COMBINE-collage.jpg}
     \vspace{1ex}
     \textbf{Alignment free methods for sequence comparison}\\
@@ -93,9 +131,31 @@
     \textbf{How to get your computer to freeze}\\
     Dr.~Mike Kuiper, VLSCI\\[2ex]
     \textbf{How to give a better research presentation}\\
-    Prof. Justin Zobel, The University of Melbourne\\[2ex]
-    \textbf{October social event}\\[2ex]
+    Prof. Justin Zobel, Uni.~Melb.\\[2ex]
     \textbf{Student Symposium 2012}
+\end{frame}
+
+\begin{frame}{Previous COMBINE Events}
+    \centering
+    \vfill
+    \includegraphics[width=0.95\linewidth]{./images/python-workshop-photo.jpg}\\
+    \textbf{Python Workshop}\\
+    Dr.~Bernie Pope, VLSCI\\[2ex]
+\end{frame}
+
+\begin{frame}{Previous COMBINE Events}
+    \centering
+    \vfill
+    \includegraphics[height=0.8\paperheight]{./images/python-workshop-photo.jpg}\\
+    \textbf{Python Workshop}\\
+    Dr.~Bernie Pope, VLSCI\\[2ex]
+\end{frame}
+
+\begin{frame}{Previous COMBINE Events}
+    \centering
+    \vfill
+    \includegraphics[width=0.9\linewidth]{./images/wikipedia-editathon-photo.jpg}\\
+    \textbf{Wikipedia edit-a-thon \& Pizza Lunch}\\
 \end{frame}
 
 \begin{frame}{Upcoming Events}
