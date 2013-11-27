@@ -1,0 +1,504 @@
+\documentclass[10pt,]{article}
+\usepackage[compact]{titlesec}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\usepackage[ampersand]{easylist}
+\usepackage[export,Export]{adjustbox}
+% use microtype if available
+\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \usepackage{fontspec}
+  \ifxetex
+    \usepackage{xltxtra,xunicode}
+  \fi
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\fi
+\usepackage[a4paper,margin=20mm]{geometry}
+\usepackage{longtable}
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={},
+            pdftitle={},
+            colorlinks=true,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+% vim:ft=tex
+
+\usepackage{tabu}
+\usepackage{soul}
+\usepackage{lmodern}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage{fix-cm}
+\usepackage{calc}
+\usepackage{graphicx}
+\usepackage[dvipsnames,usenames]{color}
+\usepackage{tikz}
+\usepackage[all,top]{background}
+    \SetBgContents{
+       \begin{tikzpicture}[remember picture,overlay]
+          \shade[top color=blue!25!white,middle color=white, bottom color=white]
+          (-0.5\paperwidth,1ex) rectangle (\paperwidth,-0.05\paperheight) ;
+          \shade[bottom color=black!25!white,middle color=white,top color=white]
+          (-0.5\paperwidth,-0.95\paperheight) rectangle
+          (\paperwidth,-\paperheight) ;
+        \end{tikzpicture}
+    }
+    \SetBgOpacity{1}
+    \SetBgScale{1}
+    \SetBgAngle{0}
+\usepackage{wrapfig}
+\usepackage{varwidth}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\newpage
+\null
+\vfill
+
+\begin{minipage}[c]{\columnwidth}
+    \centering
+    \fontsize{25}{2ex}\selectfont\bfseries COMBINE Student Symposium 2013
+\end{minipage}
+
+\begin{longtable}[c]{@{}ll@{}}
+\hline\noalign{\medskip}
+
+\noalign{\medskip}
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+    \emph{Date \& Time}
+    \end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+    Thursday, 28th November, 2013\\
+    11:00am to 4:45pm\\
+    (Join us for drinks at the conclusion of the symposium!)
+    \end{minipage}
+\\\noalign{\medskip}
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+\emph{Venue}
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+    Denis Driscoll Theatrette\\
+    Level 3, Doug McDonell Building\\
+    The University of Melbourne\\[1em]
+    Google maps: \href{http://goo.gl/maps/rpGnM}{http://goo.gl/maps/rpGnM}\\
+    Campus ref: J19 (Building 168)
+\end{minipage}
+\\\noalign{\medskip}
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+\emph{Registration/RSVP}
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+\href{http://goo.gl/n7OASr}{http://goo.gl/n7OASr}, registration is
+\emph{FREE}.
+\end{minipage}
+\\\noalign{\medskip}
+%   \begin{minipage}[t]{0.30\columnwidth}\raggedright
+%   \emph{Abstract Submission URL}
+%   \end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+%       \href{http://goo.gl/gBb9yA}{http://goo.gl/gBb9yA}
+%   \end{minipage}
+%   \\\noalign{\medskip}
+
+%   \begin{minipage}[t]{0.30\columnwidth}\raggedright
+%   \emph{Submission Deadline}
+%   \end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+%       \st{1st November, 2013} \bfseries 10th November, 2013 (deadline extended)
+%   \end{minipage}
+%   \\\noalign{\medskip}
+
+%   \begin{minipage}[t]{0.30\columnwidth}\raggedright
+%   \emph{Author Notification}
+%   \end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+%       15th November, 2013
+%   \end{minipage}
+%   \\\noalign{\medskip}
+
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+\emph{Enquiries}
+\end{minipage} & \begin{minipage}[t]{0.70\columnwidth}\raggedright
+\href{mailto:symposium@combine.org.au}{symposium@combine.org.au}
+\end{minipage}
+\\\noalign{\medskip}
+\hline
+\end{longtable}
+
+%   \subsubsection{Submission Guidelines}
+
+%       Abstracts are to contain no more than 200 words and must
+%       include a brief description of your work, any major findings,
+%       and its impact/significance to the field.
+%       You can find tips on how to write a good abstract for a presentation at: \href{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3136027/}{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3136027/}
+
+\subsubsection{Description}
+
+The COMBINE Student Symposium 2013 is an opportunity for students and
+early-career researchers in computational biology, bioinformatics, and the life
+sciences to share their research with others in these fields. Presentations
+will be judged and the best ones will receive prizes!
+
+The symposium is not a formal peer-reviewed conference, but a less formal
+opportunity for participants to refine presentations and obtain feedback on
+their research prior to major upcoming conferences.
+
+Presentation topics may include, but are not limited to:\par
+
+\begin{minipage}[c]{\linewidth}
+    \centering
+    \begin{varwidth}[c]{\linewidth}
+        \raggedright
+        \bfseries
+        sequence analysis,evolution and phylogeny, comparative genomics, protein
+        structure, molecular and supramolecular dynamics, molecular evolution, gene
+        regulation and transcriptomics, RNA biology, proteomics, systems biology,
+        statistical genetics, mathematical biology \normalfont\ldots and much more.
+        \end{varwidth}
+\end{minipage}\par\bigskip
+
+
+% Copy-paste this higher into the document if you want to draw more attention (i guess).
+
+\subsubsection{Careers Panel}
+
+At the conclusion of the oral presentations, we will be hosting a Q\&A
+session with a panel of established researchers
+relating to career and professional-development, as well as to share
+advice and lessons learnt from their own experience in research.
+
+\begin{minipage}[c]{\linewidth}
+    \centering
+    Our Panelists:\\[3ex]
+    \begin{tabu}{X[c]X[c]X[c]}
+        \textbf{Prof.~Christopher Leckie}\linebreak
+            Dept.~of Computing and Info.~Systems\linebreak
+            The University of Melbourne
+        & \textbf{Dr.~Annalisa Swan}\linebreak
+            Researcher\linebreak
+            IBM Melbourne Research Laboratory
+        & \textbf{Dr.~Tony Papenfuss}\linebreak
+            Laboratory Head (Bioinformatics)\linebreak
+            The Walter and Eliza Hall Institute of Medical Research (WEHI)
+    \end{tabu}
+    \vspace{3ex}
+    \begin{tabu}{X[c]X[c]}
+        \textbf{Dr.~Armita Zarnegar}\linebreak
+            Computational Biologist\linebreak
+            Victorian Department of Primary Industries
+        & \textbf{Dr.~Michael J.~Kuiper}\linebreak
+            Computational Molecular Scientist\linebreak
+            The Victorian Life Sciences Computation Initiative (VLSCI)
+    \end{tabu}
+\end{minipage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{About Us}
+
+\href{http://www.combine.org.au}{COMBINE} is the official
+\href{http://www.iscbsc.org/content/regional-student-groups}{ISCB
+Regional Student Group} for Australia, a student-run organisation for
+researchers in computational biology, bioinformatics, and related
+fields.
+
+For more information about COMBINE, upcoming events, or to become a
+volunteer, please visit our website at
+\href{http://www.combine.org.au}{combine.org.au}.
+
+We are proudly sponsored by:
+
+ \vspace{2ex}
+\begin{minipage}[c]{0.5\columnwidth}
+    \centering
+    \includegraphics[height=15mm]{./images/ICT-for-Life-Sciences-Forum-logo.png}\quad
+    \includegraphics[height=15mm]{./images/ISCBSC-logo.png}
+\end{minipage}
+\begin{minipage}[c]{0.5\columnwidth}
+\begin{itemize}
+    \itemsep1pt\parskip0pt\parsep0pt
+    \item
+      \href{http://www.ict4lifesciences.org.au}{ICT for Life Sciences Forum}
+    \item
+      \href{http://www.iscb.org}{International Society for Computational
+      Biology (ISCB)}
+    \end{itemize}
+\end{minipage}
+
+
+\vfill
+\pagebreak
+\null
+\vfill
+\section{Symposium Program}
+
+\centering
+
+\begin{minipage}[c]{0.8\linewidth}
+    \begin{itemize}
+        \item[11:00am] Registration \& Morning Tea
+        \item[11:30am] Welcome
+        \item[11:40am] Session 1
+            \begin{itemize}
+                \item \emph{\bfseries Integrated genomic analysis of structural rearrangements in hormone-driven cancers}\\Speaker: Marek Cmero
+                \item \emph{\bfseries Monogamy is in your genes: Genotyping microsatellites in next-generation sequencing data}\\Speaker: Harriet Dashnow
+                \item \emph{\bfseries Investigating fragmentation signatures of cell-free DNA in human plasma using next-generation sequencing}\\Speaker: Dineika Chandrananda
+                \item \emph{\bfseries The Plasmodium paradox: Generalisation with specialisation}\\Speaker: Edward Tasker
+            \end{itemize}
+        \item[1:00pm] Lunch
+        \item[2:00pm] Session 2
+            \begin{itemize}
+                \item \emph{\bfseries A whole kidney network model}\\Speaker: Tom Gale
+                \item \emph{\bfseries Identification of novel therapeutics for complex diseases from genome wide association data}\\Speaker: Mani Grover
+                \item \emph{\bfseries CoRSeqV3: A Novel Sequence Based Algorithm for Predicting HIV Coreceptor Usage}\\Speaker: Kieran Cashin
+            \end{itemize}
+        \item[3:00pm] Afternoon Tea
+        \item[3:30pm] Careers Panel
+        \item[4:30pm] Awards \& Symposium Close
+        \item[5:00pm] Social Event (optional)
+    \end{itemize}
+\end{minipage}
+
+\vspace{5ex}
+
+\begin{minipage}[c]{0.8\linewidth}
+    \centering
+    The COMBINE Student Symposium 2013 is proudly sponsored by:\\[3ex]
+    \begin{varwidth}[t]{0.45\linewidth}
+        \centering
+        \includegraphics[height=25mm,valign=M]{./images/logo_vlsci_3508x1890.jpg}\\[2ex]
+        The Victorian Life Sciences Computation Initiative\\
+        \href{http://www.vlsci.org.au}{www.vlsci.org.au}
+    \end{varwidth}
+    \qquad
+    \begin{varwidth}[t]{0.45\linewidth}
+        \centering
+        \includegraphics[height=25mm,valign=M]{./images/ICT-for-Life-Sciences-Forum-logo.png}\\[2ex]
+        ICT For Life Sciences forum\\
+        \href{http://ict4lifesciences.org.au/}{www.ict4lifesciences.org.au}
+    \end{varwidth}
+    
+\end{minipage}
+
+\vfill
+\pagebreak
+\null
+\vfill
+
+\small
+
+{\Large\bfseries\centering Oral Presentation Abstracts (Session 1)}\\[3ex]
+
+\begin{minipage}[c]{\linewidth}
+\raggedright
+
+\emph{\bfseries Integrated genomic analysis of structural rearrangements in hormone-driven cancers}\\
+Speaker: Marek Cmero (NICTA)\\[1ex]
+{\small
+Genomic translocations have the potential to disrupt gene function,
+effectively driving the pathogenesis of cancers. Computational techniques used
+for the detection of translocation events are often highly sensitive to noise
+and therefore produce false-positive results. By integrating DNA and RNA data
+from the same patient samples, we have substantially increased the specificity
+of genomic translocations. Genomic breakpoints from Socrates, a soft-clip
+based detector of rearrangements, was used to validate detected fusion
+transcripts from deFuse, an RNA fusion detector, substantially reducing false
+positive results. Additionally, we have profiled the DNA nucleotide content
+proximal to breakpoint locations and have observed patterns of AT content and
+DNase hypersensitivity surrounding the breakpoint point of origin from
+hormone-driven cancers, distinct from the signatures observed in breaks within
+non-hormone driven cancers. The interaction of hormone receptors with
+chromatin may be responsible for the inducing translocations. We have
+developed a convolution-based classifier incorporating AT content and DNase
+hypersensitivity to identify hormone-driven translocations, and potentially
+highlight genomic regions prone to breaking.}
+
+\vspace{3ex}
+
+\emph{\bfseries Monogamy is in your genes: Genotyping microsatellites in next-generation sequencing data}\\
+Speaker: Harriet Dashnow (Murdoch Childrens Research Institute)\\[1ex]
+
+{\small
+There is a gene linked to monogamy. The first inklings of this connection came
+from studies of prairie voles, where monogamy is triggered by repetitive DNA
+sequences in a gene called arginine vasopressin receptor 1a (avpr1a). In
+humans, repeats in the same gene are associated with monogamy, as well as age
+of first sexual intercourse and marriage satisfaction (as you might expect!).
+These same repeats in are associated with the impaired social interactions that
+characterise Autism.  These repetitive DNA sequences are called
+microsatellites. The human avpr1a gene contains four microsatellites, such as
+ACACACAC. Given their links to social behaviour and disorder, measuring
+microsatellites is vital. The problem is that repetitive DNA is hard to
+measure. Existing lab-based methods are inaccurate, time-consuming, and
+expensive.  Enter next-generation sequencing. Finally we can do DNA sequencing
+on a massive scale, fast and cheap enough for large psychological studies. I
+will compare how well Illumna MiSeq and IonTorrent can sequence
+microsatellites, as well as doing lab-based validation.  I have developed a
+method that leverages next-generation sequencing technologies to measure
+complex microsatellites. No other current software tool can do this accurately.
+I present the performance of my algorithm on ultra-deep sequencing data from
+four microsatellites in the avpr1a gene.  These analysis methods and software
+will help us understand how genes shape our relationships and reveal the link
+between genetics, social behaviour and autism.}
+
+\vspace{3ex}
+
+\emph{\bfseries Investigating fragmentation signatures of cell-free DNA in human plasma using next-generation sequencing}\\
+Speaker: Dineika Chandrananda (Walter and Eliza Hall Institute)\\[1ex]
+
+{\small
+Cell-free DNA can be found in many fluids of the human body. This DNA is
+thought to escape from cells undergoing apoptosis or be actively secreted from
+cells before entering fluids such as the plasma, urine and cerebrospinal fluid.
+High-throughput studies have shown that cell-free DNA exists as short fragments
+of somewhat predictable lengths, leading us to believe that there are
+biological signatures present in the naturally cleaved fragments.
+
+Using deep-sequencing data of cell-free DNA from the plasma of pregnant women,
+we investigate how the circulating fragments localize to nucleosomal arrays on
+a genome-wide level and how the fragment sizes are dependent on the genomic
+location. We also demonstrate the existence of significant fragmentation bias
+in cell-free DNA where nucleotide frequencies show a position specific pattern
+in the region spanning 8-9 positions on either side of the DNA cleavage site.
+This bias stemming from motif-specific cleavage is related to the GC-content in
+genomic regions, which should be considered when correcting the GC bias in
+cell-free DNA sequencing data. Lastly, since maternal plasma is a mixture of
+fragments from the mother and fetus, we compare the aforementioned biological
+signatures between maternal and fetal DNA to assess the differences.}
+
+\vspace{3ex}
+
+\emph{\bfseries The Plasmodium paradox: Generalisation with specialisation}\\
+Speaker: Edward Tasker (Monash University)\\[1ex]
+
+{\small
+Parasites of the genus Plasmodium are most famous for causing human malaria. It
+is less well known that Plasmodium species infect all three classes of land
+vertebrates. Despite this broad-host spectrum, individual Plasmodium species
+are generally highly host-specific. We refer to this specificity in the face of
+diversity as the Plasmodium paradox. We hypothesise that host-specialisation is
+driven by intense host-parasite interactions, in particular at parasite
+virulence genes. To investigate this proposition, we are applying Bayesian
+genomic segmentation methods to genome alignment of three Plasmodium lineages
+infecting humans (P. falciparum), chimpanzee (P. reichenowi) and chicken (P.
+gallinaceum). Our goal is to identify segments that are as divergent between
+human and chimpanzee malarias as each is from chicken malaria (i.e., conserved
+over large evolutionary distance, but variable over smaller distances), and
+locate them in relation to described coding-regions. Our algorithm has
+identified a model with 13 segment classes to represent this data. We are
+currently analysing each class by mapping the segments back to the P.
+falciparum genome. Our work will help identify genomic regions likely important
+to the ability of malaria parasites to infect their hosts; and it will
+contribute to our understanding of how host-parasite interactions shape
+parasite genomes.}
+
+\end{minipage}
+
+\vfill
+\pagebreak
+\null
+\vfill
+
+{\Large\bfseries\centering Oral Presentation Abstracts (Session 2)}\\[3ex]
+
+\begin{minipage}[c]{\linewidth}
+\raggedright
+\small
+
+\emph{\bfseries A whole kidney network model}\\
+Speaker: Tom Gale (The University of Melbourne)\\[1ex]
+{ \small
+Existing computational models of kidney physiology either describe the whole
+organ using lumped parameters or only consider local function. This work aims
+to integrate modelling at large and small scales together by producing a
+network model of a whole rat kidney consisting of many communicating small
+scale components, then validate that model by comparison with animal data and
+other existing computational models.
+
+We have developed algorithms to computer generate artery and nephron
+structures, similar to those found in rat kidneys. This generated kidney
+structure is then used for physiological simulation. The physiological
+simulation uses a network arterial model based on compliance and Poiseuille
+flow connected to an existing nephron model by Moss (2009), with some
+modification to connect to the artery model.
+
+Simulation of 16 nephrons reproduces results from the computer model by Marsh
+(2013). Whole rat kidney simulations with 30,000 nephrons show expected
+behaviour, such as blood flow rate and glomerular filtration rate. Comparison
+with 50 nephron laser speckle and partial nephrectomy animal data is also
+shown. These results from simulations at a range of different scales provide
+evidence to demonstrate that this first whole rat kidney model composed of
+individual nephron models is valid.}
+
+\vspace{3ex}
+
+\emph{\bfseries Identification of novel therapeutics for complex diseases from genome wide association data}\\
+Speaker: Mani Grover (Deakin University)\\[1ex]
+{ \small
+Human genome sequencing has enabled the association of
+phenotypes with genetic loci, but our ability to effectively translate this
+data to the clinic has not kept pace. Integration of drug-target data with
+candidate gene prediction systems can identify novel phenotypes which may
+benefit from current therapeutics. Such a drug repositioning tool can save
+valuable time and money spent on preclinical studies and phase I clinical
+trials. We adopted a simple approach to integrate drug data with candidate
+gene predictions at the systems level. We previously used Gentrepid as a
+platform to predict 1,497 candidate genes for seven complex diseases considered
+in the Wellcome Trust Case Control Consortium genome wide association study.
+Using the publicly available drug databases, Therapeutic Target Database,
+PharmGKB and DrugBank as sources of drug-target association data, we identified
+a total of 428 (29\%) candidate genes as novel therapeutic targets for the
+phenotype of interest and 2,130 drugs feasible for repositioning against the
+predicted targets.  By integrating genetic, bioinformatic and drug data, we
+have demonstrated that currently available drugs may be repositioned as novel
+therapeutics for the seven diseases studied here, quickly taking advantage of
+prior work in pharmaceutics to translate ground breaking results in genetics to
+clinical treatments.}
+
+\vspace{3ex}
+
+\emph{\bfseries CoRSeqV3: A Novel Sequence Based Algorithm for Predicting HIV Coreceptor Usage}\\
+Speaker: Kieran Cashin (Burnet Institute)\\[1ex]
+{\small
+Human immunodeficiency virus (HIV) gains entry into immune cells by binding one
+of two cell-surface coreceptor molecules, either CCR5 or CXCR4. Maraviroc (MVC)
+is an anti-HIV drug that binds to- and blocks- HIV from using CCR5. MVC is only
+active against CCR5-using HIV strains and therefore is not prescribed to
+patients harbouring CXCR4-using viruses. Unfortunately, the cost, long
+turn-around time and technical difficulty of the laboratory experiment required
+to determine patient HIV CCR5- or CXCR4-usage have limited prescription of MVC.
+In response, we have developed an in silico algorithm (CoRSeqV3) that analyses
+protein sequences translated from a small portion of HIV DNA to accurately
+predict HIV CCR5- or CXCR4-usage. CoRSeqV3 prediction criteria were developed
+by analysing thousands of published HIV protein sequences with known CCR5- or
+CXCR4-usage in order to elucidate sequence mutations and characteristics that
+differentiate CCR5- from CXCR4-using viruses. CoRSeqV3 is quick, cheap and can
+be performed by most diagnostic labs worldwide. Importantly, we have shown that
+CoRSeqV3 can reliably predict the coreceptor usage of all major HIV subtypes,
+including those that predominate in India, China, Southern Africa and Southeast
+Asia, namely regions of the world burdened most by the HIV pandemic.}
+
+\end{minipage}
+
+\vfill
+
+\end{document}

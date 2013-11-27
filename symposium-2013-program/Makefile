@@ -1,6 +1,6 @@
 .PHONY: all
 
-all: COMBINE-symposium-2013-flyer.pdf
+all: COMBINE-symposium-2013-program.pdf
 
 %.pdf: %.tex
 	pdflatex $<
